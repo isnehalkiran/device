@@ -46,6 +46,7 @@ ifneq (,$(strip $(wildcard $(PRODUCT_RENDERING_ENGINE_REVLIB))))
 endif
 endif
 
+PRODUCT_BOOT_JARS += qcmediaplayer
 
 
 #Android EGL implementation

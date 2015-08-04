@@ -35,6 +35,9 @@ TARGET_NO_KERNEL := false
 TARGET_NO_RADIOIMAGE := true
 TARGET_NO_RPC := true
 
+#PCI RCS
+TARGET_USES_PCI_RCS := false
+
 # Enables CSVT
 TARGET_USES_CSVT := true
 

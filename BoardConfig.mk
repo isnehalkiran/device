@@ -18,6 +18,9 @@ BOARD_USES_GENERIC_AUDIO := true
 # 32-bit or 64-bit), the following line should be deleted
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 
+#PCI RCS
+TARGET_USES_PCI_RCS := false
+
 # Enables CSVT
 TARGET_USES_CSVT := true
 

@@ -195,3 +195,6 @@ ro.hwui.texture_cache_size=40
 
 #set the debug configuration for 8956/76
 persist.debug.8976.config=true
+
+#force HAL1 for below packages
+camera.hal1.packagelist=com.skype.raider

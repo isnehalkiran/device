@@ -197,3 +197,6 @@ ro.emmc_size=16GB
 
 #set texture cache size
 ro.hwui.texture_cache_size=40
+
+#force HAL1 for below packages
+camera.hal1.packagelist=com.skype.raider

@@ -147,6 +147,9 @@ persist.debug.wfd.enable=1
 #property to enable VDS WFD solution
 persist.hwc.enable_vds=1
 
+#selects CoreSight configuration to enable
+persist.debug.coresight.config=stm-events
+
 #property for vendor specific library
 ro.vendor.gt_library=libqti-gt.so
 
@@ -189,3 +192,6 @@ ro.emmc_size=16GB
 
 #set texture cache size
 ro.hwui.texture_cache_size=40
+
+#set the debug configuration for 8956/76
+persist.debug.8976.config=true

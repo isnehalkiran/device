@@ -37,6 +37,7 @@ ifneq ($(strip $(QCPATH)),)
 PRODUCT_BOOT_JARS += com.qti.dpmframework
 PRODUCT_BOOT_JARS += dpmapi
 PRODUCT_BOOT_JARS += WfdCommon
+PRODUCT_BOOT_JARS += oem-services
 endif
 
 # default is nosdcard, S/W button enabled in resource

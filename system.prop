@@ -26,6 +26,7 @@ dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 debug.enable.sglscale=1
+persist.hwc.downscale_threshold=1.15
 
 #ro.hdmi.enable=true
 #tunnel.decode=true
@@ -195,3 +196,6 @@ ro.cutoff_voltage_mv=3200
 
 #set device emmc size
 ro.emmc_size=16GB
+
+#set texture cache size
+ro.hwui.texture_cache_size=40

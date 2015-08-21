@@ -204,3 +204,6 @@ ro.cutoff_voltage_mv=3200
 
 #set device emmc size
 ro.emmc_size=16GB
+
+#set texture cache size
+ro.hwui.texture_cache_size=40

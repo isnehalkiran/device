@@ -50,15 +50,11 @@
     <ctl name="DEC6 Volume" value="84" />
     <ctl name="DEC7 Volume" value="84" />
     <ctl name="DEC8 Volume" value="84" />
-    <ctl name="COMP1 Switch" value="0" />
-    <ctl name="COMP2 Switch" value="0" />
-    <ctl name="COMP3 Switch" value="0" />
-    <ctl name="COMP4 Switch" value="0" />
-    <ctl name="COMP5 Switch" value="0" />
-    <ctl name="COMP6 Switch" value="0" />
-    <ctl name="COMP7 Switch" value="0" />
-    <ctl name="COMP8 Switch" value="0" />
-    <ctl name="RX HPH Mode" value="CLS_H_HIFI" />
+    <ctl name="COMP1 Switch" value="1" />
+    <ctl name="COMP2 Switch" value="1" />
+    <ctl name="COMP7 Switch" value="1" />
+    <ctl name="COMP8 Switch" value="1" />
+    <ctl name="RX HPH Mode" value="CLS_H_LP" />
     <ctl name="SLIMBUS_3_RX Port Mixer MI2S_TX" value="0" />
     <ctl name="HDMI_RX Port Mixer MI2S_TX" value="0" />
     <ctl name="SLIMBUS_0_RX Port Mixer SLIM_0_TX" value="0" />
@@ -1612,8 +1608,6 @@
         <ctl name="SLIM_0_RX Channels" value="Two" />
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT8_1 MIX1 INP0" value="RX1" />
-        <ctl name="COMP7 Switch" value="1" />
-        <ctl name="COMP8 Switch" value="1" />
         <ctl name="SpkrLeft COMP Switch" value="1" />
         <ctl name="SpkrRight COMP Switch" value="1" />
         <ctl name="SpkrLeft BOOST Switch" value="1" />
@@ -1628,7 +1622,6 @@
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
-        <ctl name="COMP7 Switch" value="1" />
         <ctl name="SpkrLeft COMP Switch" value="1" />
         <ctl name="SpkrLeft BOOST Switch" value="1" />
         <ctl name="SpkrLeft VISENSE Switch" value="1" />
@@ -1753,8 +1746,6 @@
         <ctl name="RX INT2_2 MUX" value="RX1" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="COMP1 Switch" value="1" />
-        <ctl name="COMP2 Switch" value="1" />
     </path>
 
     <path name="headphones-44.1">
@@ -1770,8 +1761,6 @@
         <ctl name="SPL SRC1 MUX" value="SRC_IN_HPHR" />
         <ctl name="RX INT1 SPLINE MIX HPHL Switch" value="1" />
         <ctl name="RX INT2 SPLINE MIX HPHR Switch" value="1" />
-        <ctl name="COMP1 Switch" value="1" />
-        <ctl name="COMP2 Switch" value="1" />
     </path>
 
     <path name="headset-mic">
@@ -1817,8 +1806,6 @@
         <path name="headphones" />
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT8_1 MIX1 INP0" value="RX1" />
-        <ctl name="COMP7 Switch" value="1" />
-        <ctl name="COMP8 Switch" value="1" />
         <ctl name="SpkrLeft COMP Switch" value="1" />
         <ctl name="SpkrRight COMP Switch" value="1" />
         <ctl name="SpkrLeft BOOST Switch" value="1" />
@@ -1838,6 +1825,8 @@
     </path>
 
     <path name="anc-headphones">
+	<ctl name="COMP1 Switch" value="0" />
+	<ctl name="COMP2 Switch" value="0" />
         <ctl name="ANC Function" value="ON" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
@@ -1868,7 +1857,6 @@
     <path name="speaker-and-anc-headphones">
         <path name="anc-headphones" />
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
-        <ctl name="COMP7 Switch" value="1" />
     </path>
 
     <path name="anc-fb-headphones">
@@ -1879,10 +1867,11 @@
     <path name="speaker-and-anc-fb-headphones">
         <path name="anc-fb-headphones" />
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
-        <ctl name="COMP7 Switch" value="1" />
     </path>
 
     <path name="voice-anc-headphones">
+	<ctl name="COMP1 Switch" value="0" />
+	<ctl name="COMP2 Switch" value="0" />
         <ctl name="ANC Function" value="ON" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
@@ -1915,6 +1904,8 @@
     </path>
 
     <path name="voice-anc-fb-headphones">
+	<ctl name="COMP1 Switch" value="0" />
+	<ctl name="COMP2 Switch" value="0" />
         <ctl name="ANC Function" value="ON" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
@@ -2129,7 +2120,6 @@
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT1_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
-        <ctl name="COMP1 Switch" value="1" />
     </path>
 
     <path name="voice-tty-full-headphones">

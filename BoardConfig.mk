@@ -42,6 +42,9 @@ BOOTLOADER_PLATFORM := msm8952# use msm8952 LK configuration
 #PCI RCS
 TARGET_USES_PCI_RCS := false
 
+#PCI RCS
+TARGET_USES_PCI_RCS := false
+
 # Enables CSVT
 TARGET_USES_CSVT := true
 

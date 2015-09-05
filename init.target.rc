@@ -236,6 +236,11 @@ service adsprpcd /system/bin/adsprpcd
     user media
     group media
 
+service hvdcp_opti /system/bin/hvdcp_opti
+    class main
+    user root
+    group root
+
 on property:init.svc.dts_configurator=stopped
     start dtseagleservice
 

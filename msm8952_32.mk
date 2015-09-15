@@ -174,3 +174,11 @@ endif
 # Sensor HAL conf file
 PRODUCT_COPY_FILES += \
      device/qcom/msm8952_32/sensors/hals.conf:system/etc/sensors/hals.conf
+
+# Reduce client buffer size for fast audio output tracks
+PRODUCT_PROPERTY_OVERRIDES += \
+     af.fast_track_multiplier=1
+
+# Low latency audio buffer size in frames
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio_hal.period_size=192

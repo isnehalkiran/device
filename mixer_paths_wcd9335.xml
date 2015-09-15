@@ -1698,6 +1698,11 @@
        <ctl name="RX INT8 VBAT SPKRR VBAT Enable" value="1" />
    </path>
 
+   <path name="voice-speaker-protected-vbat">
+       <path name="voice-speaker-protected" />
+       <ctl name="RX INT7 VBAT SPKRL VBAT Enable" value="1" />
+   </path>
+
    <path name="handset">
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />

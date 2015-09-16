@@ -200,3 +200,10 @@ ro.hwui.texture_cache_size=40
 
 #force HAL1 for below packages
 camera.hal1.packagelist=com.skype.raider
+
+#properties for limiting preview size in camera
+camera.display.umax=1920x1080
+camera.display.lmax=1280x720
+
+#low power mode for camera
+camera.lowpower.record.enable=1

@@ -34,6 +34,8 @@ tz.mbn                  /dev/block/bootdevice/by-name/tz
 hyp.mbn                 /dev/block/bootdevice/by-name/hyp
 rpm.mbn                 /dev/block/bootdevice/by-name/rpm
 emmc_appsboot.mbn       /dev/block/bootdevice/by-name/aboot
+cmnlib.mbn              /dev/block/bootdevice/by-name/cmnlib
+keymaster.mbn           /dev/block/bootdevice/by-name/keymaster
 
 # filename + .bak       backup partition
 

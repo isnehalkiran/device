@@ -119,6 +119,8 @@ TARGET_CRYPTFS_HW_PATH := device/qcom/common/cryptfs_hw
 
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
+MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
+
 # Enable dex pre-opt to speed up initial boot
 ifeq ($(HOST_OS),linux)
   ifeq ($(WITH_DEXPREOPT),)

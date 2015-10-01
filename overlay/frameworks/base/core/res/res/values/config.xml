@@ -65,7 +65,7 @@
        <item>0x40C00000</item> <!-- SCHEDBOOST resource opcode-->
        <item>0x1</item>        <!-- SCHEDBOOST resource value-->
        <item>0x40800000</item> <!-- CPUBOOST_MIN_FREQ resource opcode-->
-       <item>0x5DC</item>      <!-- CPUBOOST MIN_FREQ resource value-->
+       <item>0x708</item>      <!-- CPUBOOST MIN_FREQ resource value-->
        <item>0x40400000</item> <!-- DISABLE_POWER_COLLAPSE resource opcode-->
        <item>0x1</item>        <!-- DISABLE_POWER_COLLAPSE resource value-->
        <item>0x41000000</item> <!-- Minimum number of cores online resource opcode-->

@@ -129,6 +129,8 @@ TARGET_LDPRELOAD := libNimsWrap.so
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_CRYPTFS_HW_PATH := device/qcom/common/cryptfs_hw
 
+MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
+
 # Enable sensor multi HAL
 USE_SENSOR_MULTI_HAL := true
 

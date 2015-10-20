@@ -134,3 +134,5 @@ ifeq ($(HOST_OS),linux)
 endif
 
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
+
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.msm

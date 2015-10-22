@@ -129,6 +129,13 @@ service perfd /system/vendor/bin/perfd
    user root
    disabled
 
+service seempd /system/bin/seempd
+   class late_start
+   user system
+   group system
+   socket seempdw dgram 0666 system system
+   oneshot
+
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
    user root

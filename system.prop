@@ -123,6 +123,10 @@ audio.deep_buffer.media=true
 
 #enable voice path for PCM VoIP by default
 use.voice.path.for.pcm.voip=true
+
+#enable downsampling for multi-channel content > 48Khz
+audio.playback.mch.downsample=true
+
 #
 #System property for FM transmitter
 #

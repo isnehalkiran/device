@@ -936,4 +936,16 @@
     <path name="voice-tx">
     </path>
 
+    <path name="line">
+          <path name="headphones" />
+    </path>
+
+    <path name="voice-line">
+          <path name="voice-headphones" />
+    </path>
+
+    <path name="speaker-and-line">
+          <path name="speaker-and-headphones" />
+    </path>
+
 </mixer>

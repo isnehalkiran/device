@@ -56,7 +56,7 @@ keymaster.mbn.bak       /dev/block/bootdevice/by-name/keymasterbak
 
 # filename              location
 
-modem.*                 /dev/block/platform/bootdevice/by-name/modem
-wcnss.*                 /dev/block/platform/bootdevice/by-name/modem
-widevine.*              /dev/block/platform/bootdevice/by-name/modem
-adsp.*                  /dev/block/platform/bootdevice/by-name/modem
+modem.*                 /dev/block/bootdevice/by-name/modem
+wcnss.*                 /dev/block/bootdevice/by-name/modem
+widevine.*              /dev/block/bootdevice/by-name/modem
+adsp.*                  /dev/block/bootdevice/by-name/modem

@@ -98,6 +98,16 @@
 
     <path name="listen-cpe-headset-mic">
         <ctl name="MADONOFF Switch" value="1" />
+        <ctl name="TX13 INP MUX" value="CPE_TX_PP" />
+        <ctl name="AIF4_MAD Mixer SLIM TX13" value="1" />
+        <ctl name="MAD Input" value="ADC2" />
+        <ctl name="CPE AFE MAD Enable" value="1"/>
+    </path>
+
+    <!-- path name used for low bandwidth FTRT codec interface -->
+    <path name="listen-cpe-headset-mic low-speed-intf">
+        <ctl name="MADONOFF Switch" value="1" />
+        <ctl name="AIF4_MAD Mixer SLIM TX12" value="1" />
         <ctl name="MAD Input" value="ADC2" />
         <ctl name="CPE AFE MAD Enable" value="1"/>
     </path>
@@ -112,7 +122,7 @@
     <path name="listen-ape-headset-mic">
         <ctl name="MAD_BROADCAST Switch" value="1" />
         <ctl name="TX13 INP MUX" value="MAD_BRDCST" />
-        <ctl name="AIF4 Switch" value="1" />
+        <ctl name="AIF4_MAD Mixer SLIM TX13" value="1" />
         <ctl name="MAD Input" value="ADC2" />
     </path>
 

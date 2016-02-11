@@ -15,8 +15,8 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
-# Start in cdma mode
-ro.telephony.default_network=5
+# Start in GWL mode
+ro.telephony.default_network=9
 
 debug.sf.hw=0
 debug.egl.hw=0

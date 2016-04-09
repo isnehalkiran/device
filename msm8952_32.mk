@@ -1,13 +1,14 @@
-DEVICE_PACKAGE_OVERLAYS := device/qcom/msm8952_32/overlay
+#DEVICE_PACKAGE_OVERLAYS := device/qcom/msm8952_32/overlay
 
 TARGET_USES_QCOM_BSP := true
 
 # Add QC Video Enhancements flag
-TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+#TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 TARGET_USES_NQ_NFC := false
+TARGET_USES_IMS := false
 
 #QTIC flag
--include $(QCPATH)/common/config/qtic-config.mk
+#-include $(QCPATH)/common/config/qtic-config.mk
 
 # media_profiles and media_codecs xmls for msm8952
 ifeq ($(TARGET_ENABLE_QC_AV_ENHANCEMENTS), true)
@@ -41,16 +42,15 @@ ifneq (,$(strip $(wildcard $(PRODUCT_RENDERING_ENGINE_REVLIB))))
 endif
 endif
 
-PRODUCT_BOOT_JARS += qcmediaplayer \
-                     vcard \
+PRODUCT_BOOT_JARS += vcard \
                      tcmiface
 ifneq ($(strip $(QCPATH)),)
-    PRODUCT_BOOT_JARS += qcom.fmradio
-    PRODUCT_BOOT_JARS += WfdCommon
-    PRODUCT_BOOT_JARS += oem-services
-    PRODUCT_BOOT_JARS += com.qti.dpmframework
-    PRODUCT_BOOT_JARS += dpmapi
-    PRODUCT_BOOT_JARS += com.qti.location.sdk
+#    PRODUCT_BOOT_JARS += qcom.fmradio
+#    PRODUCT_BOOT_JARS += WfdCommon
+#    PRODUCT_BOOT_JARS += oem-services
+#    PRODUCT_BOOT_JARS += com.qti.dpmframework
+#    PRODUCT_BOOT_JARS += dpmapi
+#    PRODUCT_BOOT_JARS += com.qti.location.sdk
 endif
 
 # Audio configuration file

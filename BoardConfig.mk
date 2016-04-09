@@ -23,6 +23,8 @@ endif
 
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
 BOARD_USES_GENERIC_AUDIO := true
+USE_CLANG_PLATFORM_BUILD := true
+TARGET_DISABLE_DASH := true 
 
 -include $(QCPATH)/common/msm8952_32/BoardConfigVendor.mk
 TARGET_COMPILE_WITH_MSM_KERNEL := true
@@ -88,8 +90,8 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PERSISTIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USE_MDTP := true
 TARGET_USES_AOSP := false
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk
-BOARD_KERNEL_SEPARATED_DT := true
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk androidboot.selinux=permissive
+#BOARD_KERNEL_SEPARATED_DT := true
 
 BOARD_EGL_CFG := device/qcom/msm8952_32/egl.cfg
 
@@ -111,7 +113,7 @@ TARGET_USES_ION := true
 TARGET_USES_NEW_ION_API :=true
 TARGET_USES_QCOM_BSP := false
 
-TARGET_TS_MAKEUP := true
+#TARGET_TS_MAKEUP := true
 
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
 TARGET_INIT_VENDOR_LIB := libinit_msm
@@ -124,12 +126,12 @@ HAVE_SYNAPTICS_I2C_RMI4_FW_UPGRADE := true
 TARGET_BOARD_SUFFIX := _32
 
 #Use dlmalloc instead of jemalloc for mallocs
-MALLOC_IMPL := dlmalloc
+#MALLOC_IMPL := dlmalloc
 
-TARGET_LDPRELOAD := libNimsWrap.so
+#TARGET_LDPRELOAD := libNimsWrap.so
 
 #Enable HW based full disk encryption
-TARGET_HW_DISK_ENCRYPTION := true
+TARGET_HW_DISK_ENCRYPTION := false
 TARGET_CRYPTFS_HW_PATH := device/qcom/common/cryptfs_hw
 
 MAX_VIRTUAL_DISPLAY_DIMENSION := 2048

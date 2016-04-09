@@ -36,7 +36,7 @@ on early-init
     mkdir /dsp 0771 media media
 
 on post-fs
-    export LD_PRELOAD libNimsWrap.so
+    #export LD_PRELOAD libNimsWrap.so
 
 on fs
     wait /dev/block/bootdevice
@@ -181,11 +181,11 @@ on property:init.svc.surfaceflinger=stopped
 on property:init.svc.surfaceflinger=running
     start ppd
 
-service wcnss-service /system/bin/wcnss_service
-    class main
-    user system
-    group system wifi radio
-    oneshot
+#service wcnss-service /system/bin/wcnss_service
+#    class main
+#    user system
+#    group system wifi radio
+#    oneshot
 
 on charger
     wait /dev/block/bootdevice/by-name/system

@@ -9,6 +9,8 @@ TARGET_BOOTLOADER_BOARD_NAME := msm8952
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_APPEND_DTB := true
 BOARD_USES_GENERIC_AUDIO := true
+USE_CLANG_PLATFORM_BUILD := true
+TARGET_DISABLE_DASH := true
 
 -include $(QCPATH)/common/msm8952_64/BoardConfigVendor.mk
 
@@ -45,7 +47,7 @@ TARGET_NO_BOOTLOADER := false
 TARGET_NO_KERNEL := false
 BOOTLOADER_GCC_VERSION := arm-eabi-4.8
 BOOTLOADER_PLATFORM := msm8952 # use msm8952 LK configuration
-MALLOC_IMPL := dlmalloc
+#MALLOC_IMPL := dlmalloc
 
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USE_MDTP := true
@@ -71,10 +73,10 @@ TARGET_USES_NEW_ION_API :=true
 TARGET_USES_QCOM_BSP := true
 TARGET_NO_RPC := true
 
-TARGET_TS_MAKEUP := true
+#TARGET_TS_MAKEUP := true
 
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk
-BOARD_KERNEL_SEPARATED_DT := true
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk androidboot.selinux=permissive
+#BOARD_KERNEL_SEPARATED_DT := true
 
 BOARD_KERNEL_BASE        := 0x80000000
 BOARD_KERNEL_PAGESIZE    := 2048
@@ -116,7 +118,7 @@ USE_SENSOR_MULTI_HAL := true
 TARGET_PER_MGR_ENABLED := true
 
 #Enable HW based full disk encryption
-TARGET_HW_DISK_ENCRYPTION := true
+TARGET_HW_DISK_ENCRYPTION := false
 TARGET_CRYPTFS_HW_PATH := device/qcom/common/cryptfs_hw
 
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
@@ -137,4 +139,4 @@ endif
 
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 
-BOARD_HAL_STATIC_LIBRARIES := libhealthd.msm
+#BOARD_HAL_STATIC_LIBRARIES := libhealthd.msm

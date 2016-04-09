@@ -1,12 +1,13 @@
-DEVICE_PACKAGE_OVERLAYS := device/qcom/msm8952_64/overlay
+#DEVICE_PACKAGE_OVERLAYS := device/qcom/msm8952_64/overlay
 
 TARGET_USES_QCOM_BSP := true
 # Add QC Video Enhancements flag
-TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+#TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 TARGET_USES_NQ_NFC := false
+TARGET_USES_IMS := false
 
 #QTIC flag
--include $(QCPATH)/common/config/qtic-config.mk
+#-include $(QCPATH)/common/config/qtic-config.mk
 
 # media_profiles and media_codecs xmls for msm8952
 ifeq ($(TARGET_ENABLE_QC_AV_ENHANCEMENTS), true)
@@ -36,11 +37,11 @@ PRODUCT_MODEL := msm8952 for arm64
 PRODUCT_BOOT_JARS += tcmiface
 
 ifneq ($(strip $(QCPATH)),)
-PRODUCT_BOOT_JARS += com.qti.dpmframework
-PRODUCT_BOOT_JARS += dpmapi
-PRODUCT_BOOT_JARS += WfdCommon
-PRODUCT_BOOT_JARS += oem-services
-PRODUCT_BOOT_JARS += com.qti.location.sdk
+#PRODUCT_BOOT_JARS += com.qti.dpmframework
+#PRODUCT_BOOT_JARS += dpmapi
+#PRODUCT_BOOT_JARS += WfdCommon
+#PRODUCT_BOOT_JARS += oem-services
+#PRODUCT_BOOT_JARS += com.qti.location.sdk
 endif
 
 # default is nosdcard, S/W button enabled in resource
@@ -55,7 +56,7 @@ ifneq (,$(strip $(wildcard $(PRODUCT_RENDERING_ENGINE_REVLIB))))
 endif
 endif
 
-PRODUCT_BOOT_JARS += qcmediaplayer
+#PRODUCT_BOOT_JARS += qcmediaplayer
 
 
 #Android EGL implementation
@@ -66,7 +67,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvoiceprocessing
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
            qcom.fmradio
 
 # Audio configuration file

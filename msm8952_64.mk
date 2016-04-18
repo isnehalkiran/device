@@ -67,7 +67,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvoiceprocessing
 
-#PRODUCT_BOOT_JARS += \
+PRODUCT_BOOT_JARS += \
            qcom.fmradio
 
 # Audio configuration file

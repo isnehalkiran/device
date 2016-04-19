@@ -62,6 +62,7 @@ endif
 #Android EGL implementation
 PRODUCT_PACKAGES += libGLES_android
 
+-include $(TOPDIR)hardware/qcom/audio/configs/msm8952/msm8952.mk
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcompostprocbundle \

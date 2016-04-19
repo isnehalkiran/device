@@ -45,7 +45,7 @@ endif
 PRODUCT_BOOT_JARS += vcard \
                      tcmiface
 ifneq ($(strip $(QCPATH)),)
-#    PRODUCT_BOOT_JARS += qcom.fmradio
+    PRODUCT_BOOT_JARS += qcom.fmradio
 #    PRODUCT_BOOT_JARS += WfdCommon
 #    PRODUCT_BOOT_JARS += oem-services
 #    PRODUCT_BOOT_JARS += com.qti.dpmframework

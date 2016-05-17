@@ -199,6 +199,9 @@ ro.sys.fw.trim_empty_percent=100
 ro.sys.fw.trim_cache_percent=100
 ro.sys.fw.trim_enable_memory=2147483648
 
+# Create zram disk
+ro.config.zram=true
+
 #Optimal dex2oat threads for faster app installation
 ro.sys.fw.dex2oat_thread_count=4
 

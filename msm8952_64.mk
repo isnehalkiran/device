@@ -1,4 +1,4 @@
-DEVICE_PACKAGE_OVERLAYS := device/qcom/msm8952_64/overlay
+DEVICE_PACKAGE_OVERLAYS := device/xiaomi/kenzo/overlay
 
 TARGET_USES_QCOM_BSP := true
 # Add QC Video Enhancements flag
@@ -9,17 +9,17 @@ TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
 # media_profiles and media_codecs xmls for msm8952
 ifeq ($(TARGET_ENABLE_QC_AV_ENHANCEMENTS), true)
-PRODUCT_COPY_FILES += device/qcom/msm8952_32/media/media_profiles_8952.xml:system/etc/media_profiles.xml \
-                      device/qcom/msm8952_32/media/media_profiles_8956.xml:system/etc/media_profiles_8956.xml \
-                      device/qcom/msm8952_32/media/media_codecs_8952.xml:system/etc/media_codecs.xml \
-                      device/qcom/msm8952_32/media/media_codecs_8956.xml:system/etc/media_codecs_8956.xml \
-                      device/qcom/msm8952_32/media/media_codecs_performance_8952.xml:system/etc/media_codecs_performance.xml \
-                      device/qcom/msm8952_32/media/media_codecs_performance_8956.xml:system/etc/media_codecs_performance_8956.xml \
-                      device/qcom/msm8952_32/media/media_codecs_8956_v1.xml:system/etc/media_codecs_8956_v1.xml \
-                      device/qcom/msm8952_32/media/media_codecs_performance_8956_v1.xml:system/etc/media_codecs_performance_8956_v1.xml
+PRODUCT_COPY_FILES += device/xiaomi/kenzo/media/media_profiles_8952.xml:system/etc/media_profiles.xml \
+                      device/xiaomi/kenzo/media/media_profiles_8956.xml:system/etc/media_profiles_8956.xml \
+                      device/xiaomi/kenzo/media/media_codecs_8952.xml:system/etc/media_codecs.xml \
+                      device/xiaomi/kenzo/media/media_codecs_8956.xml:system/etc/media_codecs_8956.xml \
+                      device/xiaomi/kenzo/media/media_codecs_performance_8952.xml:system/etc/media_codecs_performance.xml \
+                      device/xiaomi/kenzo/media/media_codecs_performance_8956.xml:system/etc/media_codecs_performance_8956.xml \
+                      device/xiaomi/kenzo/media/media_codecs_8956_v1.xml:system/etc/media_codecs_8956_v1.xml \
+                      device/xiaomi/kenzo/media/media_codecs_performance_8956_v1.xml:system/etc/media_codecs_performance_8956_v1.xml
 endif
 
-PRODUCT_COPY_FILES += device/qcom/msm8952_64/whitelistedapps.xml:system/etc/whitelistedapps.xml
+PRODUCT_COPY_FILES += device/xiaomi/kenzo/whitelistedapps.xml:system/etc/whitelistedapps.xml
 
 TARGET_USES_QCA_NFC := other
 TARGET_USES_NQ_NFC := false
@@ -72,30 +72,30 @@ PRODUCT_BOOT_JARS += \
 
 # Audio configuration file
 PRODUCT_COPY_FILES += \
-    device/qcom/msm8952_32/audio_policy.conf:system/etc/audio_policy.conf \
-    device/qcom/msm8952_32/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
-    device/qcom/msm8952_32/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    device/qcom/msm8952_32/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
-    device/qcom/msm8952_32/mixer_paths_qrd_skuh.xml:system/etc/mixer_paths_qrd_skuh.xml \
-    device/qcom/msm8952_32/mixer_paths_qrd_skui.xml:system/etc/mixer_paths_qrd_skui.xml \
-    device/qcom/msm8952_32/mixer_paths_qrd_skuhf.xml:system/etc/mixer_paths_qrd_skuhf.xml \
-    device/qcom/msm8952_32/mixer_paths_qrd_skum.xml:system/etc/mixer_paths_qrd_skum.xml \
-    device/qcom/msm8952_32/mixer_paths_qrd_skun_cajon.xml:system/etc/mixer_paths_qrd_skun_cajon.xml \
-    device/qcom/msm8952_32/mixer_paths_wcd9330.xml:system/etc/mixer_paths_wcd9330.xml \
-    device/qcom/msm8952_32/mixer_paths_wcd9306.xml:system/etc/mixer_paths_wcd9306.xml \
-    device/qcom/msm8952_32/mixer_paths_wcd9335.xml:system/etc/mixer_paths_wcd9335.xml \
-    device/qcom/msm8952_32/mixer_paths_wcd9326.xml:system/etc/mixer_paths_wcd9326.xml \
-    device/qcom/msm8952_32/mixer_paths_qrd_skun.xml:system/etc/mixer_paths_qrd_skun.xml \
-    device/qcom/msm8952_32/mixer_paths_skuk.xml:system/etc/mixer_paths_skuk.xml \
-    device/qcom/msm8952_32/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/qcom/msm8952_32/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
-    device/qcom/msm8952_32/sound_trigger_mixer_paths_wcd9306.xml:system/etc/sound_trigger_mixer_paths_wcd9306.xml \
-    device/qcom/msm8952_32/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
-    device/qcom/msm8952_32/sound_trigger_mixer_paths_wcd9335.xml:system/etc/sound_trigger_mixer_paths_wcd9335.xml \
-    device/qcom/msm8952_32/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
-    device/qcom/msm8952_32/audio_platform_info.xml:system/etc/audio_platform_info.xml \
-    device/qcom/msm8952_32/audio_platform_info_extcodec.xml:system/etc/audio_platform_info_extcodec.xml \
-    device/qcom/msm8952_64/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt
+    device/xiaomi/kenzo/media/audio_policy.conf:system/etc/audio_policy.conf \
+    device/xiaomi/kenzo/media/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
+    device/xiaomi/kenzo/media/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    device/xiaomi/kenzo/media/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
+    device/xiaomi/kenzo/media/mixer_paths_qrd_skuh.xml:system/etc/mixer_paths_qrd_skuh.xml \
+    device/xiaomi/kenzo/media/mixer_paths_qrd_skui.xml:system/etc/mixer_paths_qrd_skui.xml \
+    device/xiaomi/kenzo/media/mixer_paths_qrd_skuhf.xml:system/etc/mixer_paths_qrd_skuhf.xml \
+    device/xiaomi/kenzo/media/mixer_paths_qrd_skum.xml:system/etc/mixer_paths_qrd_skum.xml \
+    device/xiaomi/kenzo/media/mixer_paths_qrd_skun_cajon.xml:system/etc/mixer_paths_qrd_skun_cajon.xml \
+    device/xiaomi/kenzo/media/mixer_paths_wcd9330.xml:system/etc/mixer_paths_wcd9330.xml \
+    device/xiaomi/kenzo/media/mixer_paths_wcd9306.xml:system/etc/mixer_paths_wcd9306.xml \
+    device/xiaomi/kenzo/media/mixer_paths_wcd9335.xml:system/etc/mixer_paths_wcd9335.xml \
+    device/xiaomi/kenzo/media/mixer_paths_wcd9326.xml:system/etc/mixer_paths_wcd9326.xml \
+    device/xiaomi/kenzo/media/mixer_paths_qrd_skun.xml:system/etc/mixer_paths_qrd_skun.xml \
+    device/xiaomi/kenzo/media/mixer_paths_skuk.xml:system/etc/mixer_paths_skuk.xml \
+    device/xiaomi/kenzo/media/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/xiaomi/kenzo/media/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
+    device/xiaomi/kenzo/media/sound_trigger_mixer_paths_wcd9306.xml:system/etc/sound_trigger_mixer_paths_wcd9306.xml \
+    device/xiaomi/kenzo/media/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
+    device/xiaomi/kenzo/media/sound_trigger_mixer_paths_wcd9335.xml:system/etc/sound_trigger_mixer_paths_wcd9335.xml \
+    device/xiaomi/kenzo/media/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
+    device/xiaomi/kenzo/media/audio_platform_info.xml:system/etc/audio_platform_info.xml \
+    device/xiaomi/kenzo/media/audio_platform_info_extcodec.xml:system/etc/audio_platform_info_extcodec.xml \
+    device/xiaomi/kenzo/media/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt
 
 # MIDI feature
    PRODUCT_COPY_FILES += \
@@ -110,14 +110,14 @@ PRODUCT_PACKAGES += wcnss_service
 
 # MSM IRQ Balancer configuration file
 PRODUCT_COPY_FILES += \
-    device/qcom/msm8952_64/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
-    device/qcom/msm8952_64/msm_irqbalance_little_big.conf:system/vendor/etc/msm_irqbalance_little_big.conf
+    device/xiaomi/kenzo/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
+    device/xiaomi/kenzo/msm_irqbalance_little_big.conf:system/vendor/etc/msm_irqbalance_little_big.conf
 
 #wlan driver
 PRODUCT_COPY_FILES += \
-    device/qcom/msm8952_64/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
-    device/qcom/msm8952_32/WCNSS_wlan_dictionary.dat:persist/WCNSS_wlan_dictionary.dat \
-    device/qcom/msm8952_64/WCNSS_qcom_wlan_nv.bin:persist/WCNSS_qcom_wlan_nv.bin
+    device/xiaomi/kenzo/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+    device/xiaomi/kenzo/WCNSS_wlan_dictionary.dat:persist/WCNSS_wlan_dictionary.dat \
+    device/xiaomi/kenzo/WCNSS_qcom_wlan_nv.bin:persist/WCNSS_qcom_wlan_nv.bin
 
 PRODUCT_PACKAGES += \
     wpa_supplicant_overlay.conf \
@@ -203,7 +203,7 @@ endif
 
 # Sensor HAL conf file
  PRODUCT_COPY_FILES += \
-     device/qcom/msm8952_64/sensors/hals.conf:system/etc/sensors/hals.conf
+     device/xiaomi/kenzo/sensors/hals.conf:system/etc/sensors/hals.conf
 
 # Reduce client buffer size for fast audio output tracks
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -215,3 +215,46 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_SUPPORTS_VERITY := true
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
+
+###############common64.mk
+$(call inherit-product, device/qcom/common/base.mk)
+
+# For PRODUCT_COPY_FILES, the first instance takes precedence.
+# Since we want use QC specific files, we should inherit
+# device-vendor.mk first to make sure QC specific files gets installed.
+$(call inherit-product-if-exists, $(QCPATH)/common/config/device-vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+PRODUCT_BRAND := qcom
+PRODUCT_AAPT_CONFIG += hdpi mdpi
+
+ifndef PRODUCT_MANUFACTURER
+PRODUCT_MANUFACTURER := QUALCOMM
+endif
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so \
+    persist.radio.apm_sim_not_pwdn=1 \
+    persist.radio.sib16_support=1 \
+    persist.radio.custom_ecc=1 \
+    ro.frp.pst=/dev/block/bootdevice/by-name/config
+
+PRODUCT_PRIVATE_KEY := device/qcom/common/qcom.key
+
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+#$(call inherit-product, frameworks/base/data/fonts/fonts.mk)
+#$(call inherit-product, frameworks/base/data/keyboards/keyboards.mk)
+
+################################
+# gps/location secuity configuration file
+PRODUCT_COPY_FILES += \
+    device/qcom/common/sec_config:system/etc/sec_config
+
+PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
+    device/qcom/common/media/media_profiles.xml:system/etc/media_profiles.xml \
+    device/qcom/common/media/media_codecs.xml:system/etc/media_codecs.xml
+

@@ -45,8 +45,13 @@ ifneq (,$(strip $(wildcard $(PRODUCT_RENDERING_ENGINE_REVLIB))))
 endif
 endif
 
+# telephony-ext jar is needed for MSIM manual provisioning and for other
+# telephony related functionalities to work.
 PRODUCT_BOOT_JARS += vcard \
-                     tcmiface
+                     tcmiface \
+                     telephony-ext
+
+PRODUCT_PACKAGES += telephony-ext
 ifneq ($(strip $(QCPATH)),)
     PRODUCT_BOOT_JARS += qcom.fmradio
 #    PRODUCT_BOOT_JARS += WfdCommon

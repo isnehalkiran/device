@@ -162,3 +162,4 @@ endif
 # extra images
 #----------------------------------------------------------------------
 include device/qcom/common/generate_extra_images.mk
+include $(QCPATH)/securemsm/mdtp/target/Android.mk

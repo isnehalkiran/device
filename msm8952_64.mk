@@ -38,7 +38,11 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := msm8952 for arm64
 
 PRODUCT_BOOT_JARS += tcmiface
+# This jar is needed for MSIM manual provisioning and for other
+# telephony related functionalities to work.
+PRODUCT_BOOT_JARS += telephony-ext
 
+PRODUCT_PACKAGES += telephony-ext
 ifneq ($(strip $(QCPATH)),)
 #PRODUCT_BOOT_JARS += com.qti.dpmframework
 #PRODUCT_BOOT_JARS += dpmapi

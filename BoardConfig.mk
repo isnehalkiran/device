@@ -131,7 +131,7 @@ TARGET_BOARD_SUFFIX := _32
 #TARGET_LDPRELOAD := libNimsWrap.so
 
 #Enable HW based full disk encryption
-TARGET_HW_DISK_ENCRYPTION := true
+TARGET_HW_DISK_ENCRYPTION := false
 TARGET_CRYPTFS_HW_PATH := device/qcom/common/cryptfs_hw
 
 MAX_VIRTUAL_DISPLAY_DIMENSION := 2048

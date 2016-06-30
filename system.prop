@@ -184,14 +184,6 @@ ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=2048
 
-#Enable B service adj transition by default
-ro.sys.fw.bservice_enable=true
-ro.sys.fw.bservice_limit=5
-ro.sys.fw.bservice_age=5000
-
-# Enable Delay Service Restart
-ro.am.reschedule_service=true
-
 #Trim properties
 ro.sys.fw.use_trim_settings=true
 ro.sys.fw.empty_app_percent=50

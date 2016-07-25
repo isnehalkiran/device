@@ -24,7 +24,7 @@ endif
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
 BOARD_USES_GENERIC_AUDIO := true
 USE_CLANG_PLATFORM_BUILD := true
-TARGET_DISABLE_DASH := true 
+TARGET_DISABLE_DASH := false
 
 -include $(QCPATH)/common/msm8952_32/BoardConfigVendor.mk
 TARGET_COMPILE_WITH_MSM_KERNEL := true

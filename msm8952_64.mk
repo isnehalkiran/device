@@ -35,7 +35,7 @@ $(call inherit-product, device/qcom/common/common64.mk)
 PRODUCT_NAME := msm8952_64
 PRODUCT_DEVICE := msm8952_64
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := msm8952 for arm64
+PRODUCT_MODEL := msm8976 for arm64
 
 PRODUCT_BOOT_JARS += tcmiface
 # This jar is needed for MSIM manual provisioning and for other

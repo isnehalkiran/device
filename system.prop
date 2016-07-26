@@ -57,7 +57,7 @@ vidc.enc.dcvs.extra-buff-count=2
 #Audio voice concurrency related flags
 voice.playback.conc.disabled=true
 voice.record.conc.disabled=false
-voice.voip.conc.disabled=true
+voice.voip.conc.disabled=false
 #Decides the audio fallback path during voice call, deep-buffer and fast are the two allowed fallback paths now.
 voice.conc.fallbackpath=deep-buffer
 
@@ -221,3 +221,5 @@ camera.lowpower.record.enable=1
 
 #enable game colocation feature
 sched.colocate.enable=1
+
+persist.radio.lw_enabled=true

@@ -8,7 +8,7 @@ TARGET_USES_NQ_NFC := false
 TARGET_USES_IMS := false
 
 #QTIC flag
-#-include $(QCPATH)/common/config/qtic-config.mk
+-include $(QCPATH)/common/config/qtic-config.mk
 
 # Enable features in video HAL that can compile only on this platform
 TARGET_USES_MEDIA_EXTENSIONS := true

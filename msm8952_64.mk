@@ -7,7 +7,7 @@ TARGET_USES_NQ_NFC := false
 TARGET_USES_IMS := false
 
 #QTIC flag
-#-include $(QCPATH)/common/config/qtic-config.mk
+-include $(QCPATH)/common/config/qtic-config.mk
 
 # Enable features in video HAL that can compile only on this platform
 TARGET_USES_MEDIA_EXTENSIONS := true
@@ -63,7 +63,7 @@ ifneq (,$(strip $(wildcard $(PRODUCT_RENDERING_ENGINE_REVLIB))))
 endif
 endif
 
-#PRODUCT_BOOT_JARS += qcmediaplayer
+PRODUCT_BOOT_JARS += qcmediaplayer
 
 
 #Android EGL implementation
@@ -118,13 +118,19 @@ PRODUCT_COPY_FILES += \
 # Defined the locales
 PRODUCT_LOCALES += th_TH vi_VN tl_PH hi_IN ar_EG ru_RU tr_TR pt_BR bn_IN mr_IN ta_IN te_IN zh_HK \
         in_ID my_MM km_KH sw_KE uk_UA pl_PL sr_RS sl_SI fa_IR kn_IN ml_IN ur_IN gu_IN or_IN
-
+# When can normal compile this module, need module owner enable below commands
 # Add the overlay path
-ifeq ($(strip $(TARGET_USES_QTIC)),true)
-PRODUCT_PACKAGE_OVERLAYS := $(QCPATH)/qrdplus/Extension/res-overlay \
+#ifeq ($(strip $(TARGET_USES_QTIC)),true)
+#PRODUCT_PACKAGE_OVERLAYS := $(QCPATH)/qrdplus/Extension/res-overlay \
         $(QCPATH)/qrdplus/globalization/multi-language/res-overlay \
         $(PRODUCT_PACKAGE_OVERLAYS)
+#endif
+
+ifeq ($(strip $(TARGET_USES_QTIC)),true)
+PRODUCT_PACKAGE_OVERLAYS := $(QCPATH)/qrdplus/Extension/res-overlay \
+        $(PRODUCT_PACKAGE_OVERLAYS)
 endif
+
 
 # Sensor HAL conf file
  PRODUCT_COPY_FILES += \

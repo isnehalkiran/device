@@ -132,3 +132,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SUPPORTS_VERITY := true
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
+
+#for android_filesystem_config.h
+PRODUCT_PACKAGES += \
+    fs_config_files

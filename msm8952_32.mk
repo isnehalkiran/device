@@ -49,6 +49,7 @@ PRODUCT_DEVICE := msm8952_32
 PRODUCT_BOOT_JARS += vcard \
                      tcmiface \
                      telephony-ext
+PRODUCT_BOOT_JARS += qcmediaplayer
 
 PRODUCT_PACKAGES += telephony-ext
 ifneq ($(strip $(QCPATH)),)

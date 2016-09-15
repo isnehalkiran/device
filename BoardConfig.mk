@@ -48,7 +48,6 @@ TARGET_NO_KERNEL := false
 BOOTLOADER_GCC_VERSION := arm-eabi-4.8
 BOOTLOADER_PLATFORM := msm8952 # use msm8952 LK configuration
 #MALLOC_IMPL := dlmalloc
-MALLOC_SVELTE := true
 
 TARGET_USERIMAGES_USE_EXT4 := true
 #TARGET_USE_MDTP := true

@@ -153,3 +153,5 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
+
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.msm

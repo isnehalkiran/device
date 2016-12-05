@@ -66,6 +66,13 @@ LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE       := init.qcom.modem_links.sh
+LOCAL_MODULE_TAGS  := optional eng
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := $(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE       := gpio-keys.kl
 LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := ETC
@@ -170,3 +177,10 @@ endif
 # extra images
 #----------------------------------------------------------------------
 include device/qcom/common/generate_extra_images.mk
+
+#----------------------------------------------------------------------
+# pick up additional files for Tiny Android builds
+#----------------------------------------------------------------------
+ifeq ($(BUILD_TINY_ANDROID), true)
+include device/qcom/common/rootdir/Android.mk
+endif

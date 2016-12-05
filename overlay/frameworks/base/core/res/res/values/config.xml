@@ -117,4 +117,5 @@
    <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
 
    <!-- Should the device show AM/PM in unlock screen -->
+  <!-- <bool name="config_show_ampm_in_unlock_screen">true</bool> -->
 </resources>
